@@ -35,7 +35,7 @@ public_users.get("/", function (req, res) {
   res.send(JSON.stringify(books, null, 4));
 });
 
-// TASK 10 Get book details based on ISBN using Promises
+// TASK 10 Get book details using Promises
 
 public_users.get("/async-get-books", (req, res) => {
   const get_books = new Promise((resolve, reject) => {
